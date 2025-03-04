@@ -1,0 +1,272 @@
+/* GitHub Dark Theme Color Schema */
+
+:root {
+    --bg-color: #0d1117;
+    --border-color: #30363d;
+    --text-color: #c9d1d9;
+    --header-footer-bg: #161b22;
+    --sidebar-bg: #21262d;
+    --hover-bg: #1f6feb;
+    --tag-bg-color: #30363d;
+    /* Dim background for tags */
+    --tag-text-color: #8b949e;
+    /* Dim color for text */
+    --tag-hover-bg: #1f6feb;
+    /* Hover background color */
+    --tag-border-color: #21262d;
+    /* Border color for tags */
+}
+
+
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: var(--bg-color);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-color);
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid var(--border-color);
+}
+
+
+/* Header */
+
+.main-top-bar {
+    background: var(--header-footer-bg);
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Sidebar */
+
+.main-left-bar {
+    width: 250px;
+    background: var(--sidebar-bg);
+    vertical-align: top;
+    padding: 10px;
+}
+
+.main-left-nav-bar-section {
+    margin-bottom: 15px;
+}
+
+.main-left-nav-bar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-left-nav-bar>li {
+    background: var(--header-footer-bg);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.main-left-nav-bar label {
+    font-weight: bold;
+    color: var(--text-color);
+    display: block;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.main-left-nav-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-left-nav-bar li ul {
+    padding-left: 15px;
+}
+
+.main-left-nav-bar li ul li {
+    background: transparent;
+    padding: 5px 10px;
+    margin: 3px 0;
+    border-radius: 3px;
+    text-align: left;
+}
+
+.main-left-nav-bar a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    padding: 5px;
+    text-align: left;
+}
+
+.main-left-nav-bar a:hover {
+    background: var(--hover-bg);
+    border-radius: 3px;
+}
+
+
+/* Main Content */
+
+.main-body-content {
+    background: var(--bg-color);
+    text-align: left;
+    padding: 20px;
+    min-height: 400px;
+}
+
+
+/* Table Styling */
+
+.tabular-project-profile-flow {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.tabular-project-profile-flow th,
+.tabular-project-profile-flow td {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    text-align: left;
+}
+
+.tabular-project-profile-flow th {
+    background: var(--header-footer-bg);
+    color: var(--text-color);
+}
+
+.tabular-project-profile-flow a {
+    color: var(--hover-bg);
+    text-decoration: none;
+}
+
+.tabular-project-profile-flow a:hover {
+    text-decoration: underline;
+}
+
+
+/* Odd and Even Row Styling */
+
+.tabular-project-profile-flow tr:nth-child(odd) {
+    background-color: #1c2128;
+    /* Darker background for odd rows */
+}
+
+.tabular-project-profile-flow tr:nth-child(even) {
+    background-color: #161b22;
+    /* Darker background for even rows */
+}
+
+.tabular-project-profile-flow tr:hover {
+    background-color: #30363d;
+    /* Lighter background for row on hover */
+}
+
+
+/* Language Tag Scope */
+
+.language-tag-scope {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    /* Align tags to the right */
+    align-items: center;
+    /* Vertically align tags in the middle */
+    gap: 5px;
+    /* Space between tags */
+}
+
+.language-tag-scope span {
+    font-size: 12px;
+    /* Small font size */
+    color: var(--tag-text-color);
+    /* Dim color for text */
+    background-color: var(--tag-bg-color);
+    /* Tag background color */
+    border: 1px solid var(--tag-border-color);
+    /* Border around tags */
+    border-radius: 12px;
+    /* Round corners */
+    padding: 5px 10px;
+    /* Padding inside the tag */
+    text-align: left;
+    /* Left-align the text inside the tags */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* Hover Effect on Tags */
+
+.language-tag-scope span:hover {
+    background-color: var(--tag-hover-bg);
+    /* Hover background */
+    color: #fff;
+    /* White text color on hover */
+}
+
+
+/* Specific Tag Colors */
+
+.tag-php {
+    background-color: var(--php-color);
+}
+
+.tag-html {
+    background-color: var(--html-color);
+}
+
+.tag-python {
+    background-color: var(--python-color);
+}
+
+.tag-css {
+    background-color: var(--css-color);
+}
+
+.tag-javascript {
+    background-color: var(--js-color);
+}
+
+
+/* Footer */
+
+.main-footer {
+    background: var(--header-footer-bg);
+    color: var(--text-color);
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .main-left-bar {
+        width: 100%;
+        display: block;
+    }
+    .main-body-content {
+        display: block;
+    }
+}
