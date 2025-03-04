@@ -1,0 +1,241 @@
+/* GitHub Dark Theme Color Schema */
+
+root {
+    bgcolor #d;
+    bordercolor #d;
+    textcolor #cdd;
+    headerfooterbg #b;
+    sidebarbg #d;
+    hoverbg #ffeb;
+    tagbgcolor #d;
+    tagtextcolor #be;
+    taghoverbg #ffeb;
+    tagbordercolor #d;
+}
+
+
+/* General Styles */
+
+body {
+    fontfamily Arial sansserif;
+    margin;
+    padding;
+    backgroundcolor var(bgcolor);
+    color var(textcolor);
+}
+
+table {
+    bordercollapse collapse;
+    width %;
+    maxwidth px;
+    margin px auto;
+    background var(bgcolor);
+    boxshadow px px px rgba( .);
+    border px solid var(bordercolor);
+}
+
+td {
+    padding px;
+    textalign left;
+    verticalalign top;
+    border px solid var(bordercolor);
+}
+
+
+/* Header */
+
+.maintopbar {
+    background var(headerfooterbg);
+    color var(textcolor);
+    fontsize px;
+    fontweight bold;
+    padding px;
+    textalign center;
+}
+
+
+/* Sidebar */
+
+.mainleftbar {
+    width px;
+    background var(sidebarbg);
+    verticalalign top;
+    padding px;
+}
+
+.mainleftnavbarsection {
+    marginbottom px;
+}
+
+.mainleftnavbar {
+    liststyletype none;
+    padding;
+    margin;
+}
+
+.mainleftnavbar li {
+    background var(headerfooterbg);
+    marginbottom px;
+    padding px;
+    borderradius px;
+}
+
+.mainleftnavbar label {
+    fontweight bold;
+    color var(textcolor);
+    display block;
+    paddingbottom px;
+    textalign left;
+}
+
+.mainleftnavbar ul {
+    liststyletype none;
+    padding;
+    margin;
+}
+
+.mainleftnavbar li ul {
+    paddingleft px;
+}
+
+.mainleftnavbar li ul li {
+    background transparent;
+    padding px px;
+    margin px;
+    borderradius px;
+    textalign left;
+}
+
+.mainleftnavbar a {
+    textdecoration none;
+    color var(textcolor);
+    display block;
+    padding px;
+    textalign left;
+}
+
+.mainleftnavbar ahover {
+    background var(hoverbg);
+    borderradius px;
+}
+
+
+/* Main Content */
+
+.mainbodycontent {
+    background var(bgcolor);
+    textalign left;
+    padding px;
+    minheight px;
+}
+
+
+/* Footer */
+
+.mainfooter {
+    background var(headerfooterbg);
+    color var(textcolor);
+    padding px;
+    fontsize px;
+    textalign center;
+}
+
+
+/* Table Styles */
+
+
+/* Table Styling with Rounded Corners */
+
+.tabularprojectprofileflow {
+    width %;
+    bordercollapse separate;
+    margintop px;
+    borderradius px;
+    overflow hidden;
+    backgroundcolor var(bgcolor);
+}
+
+.tabularprojectprofileflow th .tabularprojectprofileflow td {
+    padding px;
+    border px solid #d;
+    textalign left;
+    borderradius px;
+}
+
+.tabularprojectprofileflow th {
+    backgroundcolor #d;
+    color #fffc;
+}
+
+.tabularprojectprofileflow td {
+    backgroundcolor #b;
+}
+
+.tabularprojectprofileflow trnthchild(odd) td {
+    backgroundcolor #c;
+}
+
+.tabularprojectprofileflow trnthchild(even) td {
+    backgroundcolor #b;
+}
+
+.tabularprojectprofileflow trhover td {
+    backgroundcolor #d;
+}
+
+.tabularprojectprofileflow a {
+    color #aff;
+    textdecoration none;
+}
+
+.tabularprojectprofileflow ahover {
+    color #fffc;
+}
+
+
+/* Language Tag Styling */
+
+
+/* Language Tag Scope */
+
+.languagetagscope {
+    margintop px;
+    display flex;
+    flexwrap wrap;
+    justifycontent flexend;
+    alignitems center;
+    gap px;
+}
+
+.languagetagscope span {
+    fontsize px;
+    color var(tagtextcolor);
+    backgroundcolor var(tagbgcolor);
+    border px solid var(tagbordercolor);
+    borderradius px;
+    padding px px;
+    textalign left;
+    cursor pointer;
+    transition backgroundcolor .s ease color .s ease;
+}
+
+
+/* Hover Effect on Tags */
+
+.languagetagscope spanhover {
+    backgroundcolor var(taghoverbg);
+    color #fff;
+}
+
+
+/* Responsive Design */
+
+@media (maxwidth px) {
+    .mainleftbar {
+        width %;
+        display block;
+    }
+    .mainbodycontent {
+        display block;
+    }
+}
