@@ -1,0 +1,219 @@
+/* GitHub Dark Theme Color Schema */
+:root {
+  --bg-color: #0d1117;
+  --border-color: #30363d;
+  --text-color: #c9d1d9;
+  --header-footer-bg: #161b22;
+  --sidebar-bg: #21262d;
+  --hover-bg: #1f6feb;
+  --tag-bg-color: #30363d;
+  --tag-text-color: #8b949e;
+  --tag-hover-bg: #1f6feb;
+  --tag-border-color: #21262d;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+  background: var(--bg-color);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-color);
+}
+
+td {
+  padding: 15px;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid var(--border-color);
+}
+
+/* Header */
+.main-top-bar {
+  background: var(--header-footer-bg);
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Sidebar */
+.main-left-bar {
+  width: 250px;
+  background: var(--sidebar-bg);
+  vertical-align: top;
+  padding: 10px;
+}
+
+.main-left-nav-bar-section {
+  margin-bottom: 15px;
+}
+
+.main-left-nav-bar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-left-nav-bar > li {
+  background: var(--header-footer-bg);
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.main-left-nav-bar label {
+  font-weight: bold;
+  color: var(--text-color);
+  display: block;
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+.main-left-nav-bar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-left-nav-bar li ul {
+  padding-left: 0px;
+}
+
+.main-left-nav-bar li ul li {
+  background: transparent;
+  padding: 5px 5px;
+  margin: 3px 0;
+  border-radius: 3px;
+  text-align: left;
+}
+
+.main-left-nav-bar a {
+  text-decoration: none;
+  color: var(--text-color);
+  display: block;
+  padding: 5px;
+  text-align: left;
+}
+
+.main-left-nav-bar a:hover {
+  background: var(--hover-bg);
+  border-radius: 3px;
+}
+
+/* Main Content */
+.main-body-content {
+  background: var(--bg-color);
+  text-align: left;
+  padding: 20px;
+  min-height: 400px;
+}
+
+/* Footer */
+.main-footer {
+  background: var(--header-footer-bg);
+  color: var(--text-color);
+  padding: 15px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Table Styles */
+/* Table Styling with Rounded Corners */
+.tabular-project-profile-flow {
+  width: 100%;
+  border-collapse: separate;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--bg-color);
+}
+
+.tabular-project-profile-flow th,
+.tabular-project-profile-flow td {
+  padding: 10px;
+  border: 1px solid #30363d;
+  text-align: left;
+  border-radius: 2px;
+}
+
+.tabular-project-profile-flow th {
+  background-color: #21262d;
+  color: #f0f6fc;
+}
+
+.tabular-project-profile-flow td {
+  background-color: #161b22;
+}
+
+.tabular-project-profile-flow tr:nth-child(odd) td {
+  background-color: #1c2128;
+}
+
+.tabular-project-profile-flow tr:nth-child(even) td {
+  background-color: #161b22;
+}
+
+.tabular-project-profile-flow tr:hover td {
+  background-color: #30363d;
+}
+
+.tabular-project-profile-flow a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+.tabular-project-profile-flow a:hover {
+  color: #f0f6fc;
+}
+
+/* Language Tag Styling */
+/* Language Tag Scope */
+.language-tag-scope {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+}
+
+.language-tag-scope span {
+  font-size: 12px;
+  color: var(--tag-text-color);
+  background-color: var(--tag-bg-color);
+  border: 1px solid var(--tag-border-color);
+  border-radius: 12px;
+  padding: 5px 10px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect on Tags */
+.language-tag-scope span:hover {
+  background-color: var(--tag-hover-bg);
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-left-bar {
+    width: 100%;
+    display: block;
+  }
+  .main-body-content {
+    display: block;
+  }
+}
