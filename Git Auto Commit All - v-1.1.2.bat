@@ -17,7 +17,18 @@ if "%input%"=="" (
 REM Get timestamp
 set date=%DATE%
 set time=%TIME%
-set hms=!time:~0,2!!time:~3,2!!time:~6,2!
+
+REM Format time as H:mm:ss
+REM Extract hour, minutes, and seconds, handling the hour being a single digit
+set hour=%time:~0,2%
+set minute=%time:~3,2%
+set second=%time:~6,2%
+
+REM If hour is a single digit, remove the leading space
+if "%hour:~0,1%"==" " set hour=0%hour:~1,1%
+
+set hms=%hour%:%minute%:%second%
+
 set message=%input% - %date% %hms%
 
 echo.
