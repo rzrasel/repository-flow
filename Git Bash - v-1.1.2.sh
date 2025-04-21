@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Loop until the user provides a non-empty input
+# Loop until the user provides a nonempty input
 while true; do
-    printf "Enter Commit Text: "
+    printf "Enter Commit Text "
     read input
     
     # Check if input is empty
-    if [[ -z "$input" ]]; then
+    if [[ z "$input" ]]; then
         echo "You must enter a commit message!"
     else
         break
@@ -14,20 +14,20 @@ while true; do
 done
 
 # Get the current date and time
-dateTime=$(date "+%Y-%m-%d %H:%M:%S")
+dateTime=$(date "+%Y%m%d %H%M%S")
 
 # Prepare the commit message with input and timestamp
-commit="git commit -m"
-gitcommit="$commit \"$input - $dateTime\""
+commit="git commit m"
+gitcommit="$commit \"$input  $dateTime\""
 
 # Show the commit message
 echo "$gitcommit"
 
 # Perform the git operations
 git add .
-git commit -m "$input - $dateTime"
+git commit m "$input  $dateTime"
 git pull
-git push --all
+git push all
 
 # Completion message
 echo "Process Complete. Press Enter to continue..."
