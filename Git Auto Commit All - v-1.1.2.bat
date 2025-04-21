@@ -1,16 +1,18 @@
 @echo off
-loop
-set /p input="Enter Commit Text "
+:loop
+set /p input=Enter Commit Text: 
 if "%input%"=="" (
     echo You must enter a commit message!
     goto loop
 )
+
 set date=%DATE%
-set commit=git commit m
-set gitcommit=%commit% "%input%  %date% %TIME%"
+set time=%TIME%
+set message=%input% %date% %time%
+
 git add .
-%gitcommit%
-git pull
-git push all
-echo Process Complete Press Enter...
-pause
+git commit -m "%message%"
+git pull --all
+git push --all
+
+echo Process Complete. Press Enter to exit...
