@@ -16,3 +16,5 @@ git pull --all
 git push --all
 
 echo Process Complete. Press Enter to exit...
+
+pause

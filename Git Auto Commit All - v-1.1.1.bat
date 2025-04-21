@@ -10,13 +10,13 @@ set /p input="Enter Commit Text "
  echo value %input%
  set newinput=%input%
 set date=%DATE%
-set commit=git commit m
+set commit=git commit -m
 set gitcommit=%commit% "%input%  %date% %TIME%"
 git add .
  git commit m "COMMIT COMPLETE A"
  echo %gitcommit%
 %gitcommit%
-git pull
-git push all
+git pull --all
+git push --all
 echo Process Complete Press Enter...
 pause

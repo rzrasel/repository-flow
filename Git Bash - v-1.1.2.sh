@@ -17,7 +17,7 @@ done
 dateTime=$(date "+%Y%m%d %H%M%S")
 
 # Prepare the commit message with input and timestamp
-commit="git commit m"
+commit="git commit -m"
 gitcommit="$commit \"$input  $dateTime\""
 
 # Show the commit message

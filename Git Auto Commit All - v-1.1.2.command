@@ -17,7 +17,7 @@ done
 dateTime=$(date "+%Y%m%d %H%M%S")
 
 # Prepare the commit message with input and timestamp
-commit="git commit m"
+commit="git commit -m"
 gitcommit="$commit \"$input  $dateTime\""
 
 # Show the commit message
@@ -26,8 +26,8 @@ echo "$gitcommit"
 # Perform the git operations
 git add .
 $gitcommit
-git pull
-git push all
+git pull --all
+git push --all
 
 # Completion message
 echo "Process Complete. Press Enter to continue..."
