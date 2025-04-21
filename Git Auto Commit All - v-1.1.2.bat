@@ -48,3 +48,4 @@ echo.
 echo Commit complete on branch [%branchName%]
 echo Press Enter to exit...
 pause >nul
+v
