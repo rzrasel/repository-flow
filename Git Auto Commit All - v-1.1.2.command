@@ -1,12 +1,16 @@
 #!/bin/bash
 
+# Get current branch name first
+branch=$(git rev-parse --abbrev-ref HEAD)
+echo "Current Branch: $branch"
+
 # Loop until the user provides a nonempty input
 while true; do
-    printf "Enter Commit Text "
+    printf "Enter Commit Text: "
     read input
     
     # Check if input is empty
-    if [[ z "$input" ]]; then
+    if [[ -z "$input" ]]; then
         echo "You must enter a commit message!"
     else
         break
@@ -17,18 +21,17 @@ done
 dateTime=$(date "+%Y%m%d %H%M%S")
 
 # Prepare the commit message with input and timestamp
-commit="git commit -m"
-gitcommit="$commit \"$input  $dateTime\""
+message="$input  $dateTime"
 
 # Show the commit message
-echo "$gitcommit"
+echo "Commit message: $message"
 
 # Perform the git operations
 git add .
-$gitcommit
+git commit -m "$message"
 git pull --all
 git push --all
 
 # Completion message
-echo "Process Complete. Press Enter to continue..."
-read
+echo "Process Complete on branch: $branch"
+read -p "Press Enter to continue..."
