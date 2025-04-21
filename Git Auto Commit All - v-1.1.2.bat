@@ -9,7 +9,7 @@ echo Current Branch: [%branchName%]
 set /p input=Enter Commit Text: 
 if "%input%"=="" (
     echo.
-    echo ❌ You must enter a commit message!
+    echo You must enter a commit message!
     echo.
     goto loop
 )
@@ -21,18 +21,18 @@ set hms=!time:~0,2!!time:~3,2!!time:~6,2!
 set message=%input% - %date% %hms%
 
 echo.
-echo 📦 Staging files...
+echo Staging files...
 git add .
 
-echo 📝 Committing to branch [%branchName%]: "%message%"
+echo Committing to branch [%branchName%]: "%message%"
 git commit -m "%message%"
 
-echo 🔄 Pulling latest changes...
+echo Pulling latest changes...
 git pull --all
 
 echo ⬆️ Pushing to all remotes...
 git push --all
 
 echo.
-echo ✅ Commit complete on branch [%branchName%]. Press Enter to exit...
+echo Commit complete on branch [%branchName%]. Press Enter to exit...
 pause >nul
