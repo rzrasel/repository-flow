@@ -26,7 +26,7 @@ echo "$gitcommit"
 # Perform the git operations
 git add .
 git commit -m "$input - $dateTime"
-git pull
+git pull --all
 git push --all
 
 # Completion message

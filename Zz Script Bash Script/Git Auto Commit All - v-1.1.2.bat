@@ -10,7 +10,7 @@ set commit=git commit -m
 set gitcommit=%commit% "%input% - %date% %TIME%"
 git add .
 %gitcommit%
-git pull
+git pull --all
 git push --all
 echo Process Complete Press Enter...
 pause

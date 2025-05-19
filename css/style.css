@@ -1,219 +1,241 @@
 /* GitHub Dark Theme Color Schema */
-:root {
-  --bg-color: #0d1117;
-  --border-color: #30363d;
-  --text-color: #c9d1d9;
-  --header-footer-bg: #161b22;
-  --sidebar-bg: #21262d;
-  --hover-bg: #1f6feb;
-  --tag-bg-color: #30363d;
-  --tag-text-color: #8b949e;
-  --tag-hover-bg: #1f6feb;
-  --tag-border-color: #21262d;
+
+root {
+    bgcolor #d;
+    bordercolor #d;
+    textcolor #cdd;
+    headerfooterbg #b;
+    sidebarbg #d;
+    hoverbg #ffeb;
+    tagbgcolor #d;
+    tagtextcolor #be;
+    taghoverbg #ffeb;
+    tagbordercolor #d;
 }
 
+
 /* General Styles */
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: var(--bg-color);
-  color: var(--text-color);
+    fontfamily Arial sansserif;
+    margin;
+    padding;
+    backgroundcolor var(bgcolor);
+    color var(textcolor);
 }
 
 table {
-  border-collapse: collapse;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0px auto;
-  background: var(--bg-color);
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
-  border: 1px solid var(--border-color);
+    bordercollapse collapse;
+    width %;
+    maxwidth px;
+    margin px auto;
+    background var(bgcolor);
+    boxshadow px px px rgba( .);
+    border px solid var(bordercolor);
 }
 
 td {
-  padding: 15px;
-  text-align: left;
-  vertical-align: top;
-  border: 1px solid var(--border-color);
+    padding px;
+    textalign left;
+    verticalalign top;
+    border px solid var(bordercolor);
 }
+
 
 /* Header */
-.main-top-bar {
-  background: var(--header-footer-bg);
-  color: var(--text-color);
-  font-size: 24px;
-  font-weight: bold;
-  padding: 20px;
-  text-align: center;
+
+.maintopbar {
+    background var(headerfooterbg);
+    color var(textcolor);
+    fontsize px;
+    fontweight bold;
+    padding px;
+    textalign center;
 }
+
 
 /* Sidebar */
-.main-left-bar {
-  width: 250px;
-  background: var(--sidebar-bg);
-  vertical-align: top;
-  padding: 10px;
+
+.mainleftbar {
+    width px;
+    background var(sidebarbg);
+    verticalalign top;
+    padding px;
 }
 
-.main-left-nav-bar-section {
-  margin-bottom: 15px;
+.mainleftnavbarsection {
+    marginbottom px;
 }
 
-.main-left-nav-bar {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.mainleftnavbar {
+    liststyletype none;
+    padding;
+    margin;
 }
 
-.main-left-nav-bar > li {
-  background: var(--header-footer-bg);
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 5px;
+.mainleftnavbar li {
+    background var(headerfooterbg);
+    marginbottom px;
+    padding px;
+    borderradius px;
 }
 
-.main-left-nav-bar label {
-  font-weight: bold;
-  color: var(--text-color);
-  display: block;
-  padding-bottom: 5px;
-  text-align: left;
+.mainleftnavbar label {
+    fontweight bold;
+    color var(textcolor);
+    display block;
+    paddingbottom px;
+    textalign left;
 }
 
-.main-left-nav-bar ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.mainleftnavbar ul {
+    liststyletype none;
+    padding;
+    margin;
 }
 
-.main-left-nav-bar li ul {
-  padding-left: 0px;
+.mainleftnavbar li ul {
+    paddingleft px;
 }
 
-.main-left-nav-bar li ul li {
-  background: transparent;
-  padding: 5px 5px;
-  margin: 3px 0;
-  border-radius: 3px;
-  text-align: left;
+.mainleftnavbar li ul li {
+    background transparent;
+    padding px px;
+    margin px;
+    borderradius px;
+    textalign left;
 }
 
-.main-left-nav-bar a {
-  text-decoration: none;
-  color: var(--text-color);
-  display: block;
-  padding: 5px;
-  text-align: left;
+.mainleftnavbar a {
+    textdecoration none;
+    color var(textcolor);
+    display block;
+    padding px;
+    textalign left;
 }
 
-.main-left-nav-bar a:hover {
-  background: var(--hover-bg);
-  border-radius: 3px;
+.mainleftnavbar ahover {
+    background var(hoverbg);
+    borderradius px;
 }
+
 
 /* Main Content */
-.main-body-content {
-  background: var(--bg-color);
-  text-align: left;
-  padding: 20px;
-  min-height: 400px;
+
+.mainbodycontent {
+    background var(bgcolor);
+    textalign left;
+    padding px;
+    minheight px;
 }
+
 
 /* Footer */
-.main-footer {
-  background: var(--header-footer-bg);
-  color: var(--text-color);
-  padding: 15px;
-  font-size: 18px;
-  text-align: center;
+
+.mainfooter {
+    background var(headerfooterbg);
+    color var(textcolor);
+    padding px;
+    fontsize px;
+    textalign center;
 }
+
 
 /* Table Styles */
+
+
 /* Table Styling with Rounded Corners */
-.tabular-project-profile-flow {
-  width: 100%;
-  border-collapse: separate;
-  margin-top: 20px;
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: var(--bg-color);
+
+.tabularprojectprofileflow {
+    width %;
+    bordercollapse separate;
+    margintop px;
+    borderradius px;
+    overflow hidden;
+    backgroundcolor var(bgcolor);
 }
 
-.tabular-project-profile-flow th,
-.tabular-project-profile-flow td {
-  padding: 10px;
-  border: 1px solid #30363d;
-  text-align: left;
-  border-radius: 2px;
+.tabularprojectprofileflow th .tabularprojectprofileflow td {
+    padding px;
+    border px solid #d;
+    textalign left;
+    borderradius px;
 }
 
-.tabular-project-profile-flow th {
-  background-color: #21262d;
-  color: #f0f6fc;
+.tabularprojectprofileflow th {
+    backgroundcolor #d;
+    color #fffc;
 }
 
-.tabular-project-profile-flow td {
-  background-color: #161b22;
+.tabularprojectprofileflow td {
+    backgroundcolor #b;
 }
 
-.tabular-project-profile-flow tr:nth-child(odd) td {
-  background-color: #1c2128;
+.tabularprojectprofileflow trnthchild(odd) td {
+    backgroundcolor #c;
 }
 
-.tabular-project-profile-flow tr:nth-child(even) td {
-  background-color: #161b22;
+.tabularprojectprofileflow trnthchild(even) td {
+    backgroundcolor #b;
 }
 
-.tabular-project-profile-flow tr:hover td {
-  background-color: #30363d;
+.tabularprojectprofileflow trhover td {
+    backgroundcolor #d;
 }
 
-.tabular-project-profile-flow a {
-  color: #58a6ff;
-  text-decoration: none;
+.tabularprojectprofileflow a {
+    color #aff;
+    textdecoration none;
 }
 
-.tabular-project-profile-flow a:hover {
-  color: #f0f6fc;
+.tabularprojectprofileflow ahover {
+    color #fffc;
 }
+
 
 /* Language Tag Styling */
+
+
 /* Language Tag Scope */
-.language-tag-scope {
-  margin-top: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 5px;
+
+.languagetagscope {
+    margintop px;
+    display flex;
+    flexwrap wrap;
+    justifycontent flexend;
+    alignitems center;
+    gap px;
 }
 
-.language-tag-scope span {
-  font-size: 12px;
-  color: var(--tag-text-color);
-  background-color: var(--tag-bg-color);
-  border: 1px solid var(--tag-border-color);
-  border-radius: 12px;
-  padding: 5px 10px;
-  text-align: left;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+.languagetagscope span {
+    fontsize px;
+    color var(tagtextcolor);
+    backgroundcolor var(tagbgcolor);
+    border px solid var(tagbordercolor);
+    borderradius px;
+    padding px px;
+    textalign left;
+    cursor pointer;
+    transition backgroundcolor .s ease color .s ease;
 }
+
 
 /* Hover Effect on Tags */
-.language-tag-scope span:hover {
-  background-color: var(--tag-hover-bg);
-  color: #fff;
+
+.languagetagscope spanhover {
+    backgroundcolor var(taghoverbg);
+    color #fff;
 }
 
+
 /* Responsive Design */
-@media (max-width: 768px) {
-  .main-left-bar {
-    width: 100%;
-    display: block;
-  }
-  .main-body-content {
-    display: block;
-  }
+
+@media (maxwidth px) {
+    .mainleftbar {
+        width %;
+        display block;
+    }
+    .mainbodycontent {
+        display block;
+    }
 }

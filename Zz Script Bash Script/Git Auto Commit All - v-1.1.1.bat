@@ -16,7 +16,7 @@ git add .
 :: git commit -m "COMMIT COMPLETE A"
 :: echo %gitcommit%
 %gitcommit%
-git pull
+git pull --all
 git push --all
 echo Process Complete Press Enter...
 pause
