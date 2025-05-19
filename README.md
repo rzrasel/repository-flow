@@ -1,6 +1,8 @@
 # repositoryflow
 Repository Flow
+```
+https://github.com/rzrasel/repository-flow.git
+```
 
-https//github.com/rzrasel/repositoryflow.git
-
-[Repository Flow](https//rzrasel.github.io/repositoryflow/)
+[Repository Flow](https://rzrasel.github.io/repository-flow/)
+[GitHub IO Page](https://rzrasel.github.io/repository-flow/)
